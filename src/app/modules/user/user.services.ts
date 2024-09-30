@@ -1,3 +1,4 @@
+// user service
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { IUser } from "./user.interface";

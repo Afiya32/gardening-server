@@ -1,21 +1,22 @@
+// user routes
 import { Router } from "express";
 import { userController } from "./user.controller";
 
-const router = Router();
+const userRoutes = Router();
 
 // Signup route
-router.post("/signup", userController.signupUser);
+userRoutes.post("/signup", userController.signupUser);
 
 // Login route
-router.post("/login", userController.loginUser);
+userRoutes.post("/login", userController.loginUser);
 
 // Update user route
-router.put("/:id", userController.updateUser);
+userRoutes.put("/:id", userController.updateUser);
 
 // Delete user route
-router.delete("/:id", userController.deleteUser);
+userRoutes.delete("/:id", userController.deleteUser);
 
 // Get user by ID route
-router.get("/:id", userController.findUserById);
+userRoutes.get("/:id", userController.findUserById);
 
-export const userRoutes = router;
+export default userRoutes;

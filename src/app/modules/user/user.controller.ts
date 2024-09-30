@@ -1,3 +1,4 @@
+// user controller
 import { Request, Response } from "express";
 import { userServices } from "./user.services";
 
